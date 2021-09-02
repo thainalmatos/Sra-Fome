@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <title>Sra Fome</title>
+</head>
+
+<body>
+    <!--MENU-->
+    <header>
+    <div class="parte-superior"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-cinza">
+          <a class="navbar-brand zoom" href="#">
+             <img src="img/logo 2.png" width="300" height="60">
+          </a>
+        </nav>
+        <div class="bg-rosa"></div>
+    </header>
+
+    <!--LOGIN-->
+    <main class="bg-cinza-color">
+        <br><br><br><br><br>
+        <div class="container h-100">
+            <div class="d-flex justify-content-center h-100">
+                <div class="user_card">
+                    <div class="d-flex justify-content-center">
+                        <div class="brand_logo_container">
+                            <img src="img/login.jpg" class="brand_logo" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center form_container">
+                        <form class="forms">
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" id="nome_usuario" name="usuario" class="form-control input_user" value="" placeholder="Usuário">
+                            </div>
+                            <div class="input-group mb-2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" id="senha_usuario" name="senha" class="form-control input_pass" value="" placeholder="Senha">
+                            </div>
+                            <br>
+                            <text class="text-light text-center bg-danger"> Usuário e/ou senha incorreta. </text>
+                            <div class="d-flex justify-content-center mt-3 login_container">
+                              <button type="button" name="button" class="btn login_btn">Login</button>
+                          </div>
+                        </form>
+                    </div>
+            
+                    <div class="mt-4">
+                        <div class="d-flex justify-content-center">
+                            Site exclusivo para funcionário da Sra Fome.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </main>
+
+    <!--CARDAPIO-->
+    <div class="info_box">
+        <div class="info_title">
+            <span>CARDÁPIO</span>
+            <button class="btn btn-dark text-light sair">Sair</button>
+        </div>
+
+        <input type="text" id="pesquisa" placeholder="Pesquise aqui" list="historico">
+        <datalist id="historico">
+            <option value="Picadinho"></option>
+            <option value="Milanesa de Frango"></option>
+            <option value="Bife Parmegiana"></option>
+            <option value="Omelete de Calabresa"></option>
+            <option value="Bife a Cavalo"></option>
+        </datalist>
+
+        <div class="info_list" id="lista">
+            <div class="card">
+                <div class="card-body comida1" id="lista" name="comida1">
+                  <li class="card-title" > 125 - Picadinho <text class="valor_cardapio">28.00</text></li>
+                  <p class="card-text">Picadinho de Carne com legumes acompanhado de arroz, feijão e salada.</p>
+                </div>
+                <div class="card-body comida2" id="lista" name="comida2">
+                    <li class="card-title"> 126 - Milanesa de Frango <text class="valor_cardapio2">25.00</text></li>
+                    
+                    <p class="card-text">Filé de Frango Milanesa acompanhado de arroz, feijão e salada.</p>
+                </div>
+                <div class="card-body comida3" id="lista" name="comida3">
+                    <li class="card-title"> 127 - Bife Parmegiana <text class="valor_cardapio3">29.00</text></li>
+                    <p class="card-text">Bife parmegiana acompanhado de arroz, feijão e salada.</p>
+                </div>
+                <div class="card-body comida4" id="lista" name="comida4">
+                    <li class="card-title">128 - Omelete de Calabresa <text class="valor_cardapio4">23.00</text></li>
+                    <p class="card-text">Omelete de calabresa acompanhado de arroz, feijão e salada.</p>
+                </div>
+                <div class="card-body comida5" id="lista" name="comida5">
+                    <li class="card-title"> 129 - Bife a Cavalo <text class="valor_cardapio5">32.00</text></li>
+                    <p class="card-text">Bife com ovo encima acompanhado de arroz, feijão, salada e batata frita.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--TELA DO PEDIDO, ADICIONAIS E TALS-->
+    <div class="picadinho">
+        <div class="info_picadinho" id="title">
+            <text>Picadinho</text>
+        </div>
+        <div class="info_list_picadinho">
+            <form>
+                <text id="resume">Picadinho de Carne com legumes acompanhado de arroz, feijão e salada.</text>
+                <br><br>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Código:</label>
+                    <select name="codigo" id="inputcodigo" class="form-control" id="exampleFormControlSelect1">
+                      <option>125</option>
+                      <option>126</option>
+                      <option>127</option>
+                      <option>128</option>
+                      <option>129</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Nome:</label>
+                    <input type="nome" class="form-control" id="name" placeholder="Ex. Thaina" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Adicionais:</label>
+                    <select name="extra" id="inputextra" class="form-control" id="exampleFormControlSelect1">
+                      <option>Não quero.</option>
+                      <option>Suco de Morango 300ml (7.00)</option>
+                      <option>Suco de Laranja 300ml (6.00)</option>
+                      <option>Suco de Maracujá 300ml (7.00)</option>
+                      <option>Suco de Abacaxi 300ml (6.00)</option>
+                      <option>Suco de Goiaba 300ml (6.00)</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Deseja remover algo do seu pedido?</label>
+                    <input type="remover" class="form-control" id="exampleFormControlInput1" placeholder="Ex. Cebola" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Observações:</label>
+                    <input type="obs" class="form-control" id="exampleFormControlInput1" placeholder="Ex. Tenho alergia a X tempero." required>
+                </div>
+                <br>
+            </form>
+            <div class="buttons">
+                <button  class="btn btn-dark text-light voltar">Voltar</button>
+                <button id="proximo" class="btn btn-dark text-light continuar" disabled>Continuar</button>
+            </div>
+        </div>
+    </div>
+
+    <!--TELA DO PAGAMENTO-->
+    <div class="pagamento">
+        <div class="info_pagamento">
+            <text id="title2">PAGAMENTO</text>
+        </div>
+        <div class="info_list_pagamento">
+                <text id="pedido">Pedido realizado por Thaina Lima:</text>
+                <hr width = 100%>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h5>Prato escolhido:</h5>
+                            <p id="prato">Picadinho</p>
+                            <br>
+                            <h5>Adicionais:</h5>
+                            <p id="suco">Suco de Uva</p>
+                            <hr width = 100%>
+                            <h5>TOTAL:</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <br>
+                            <p id="valor_prato"> 20.00</p>
+                            <br><br>
+                            <p id="valor_acompanhamento"> 05.00</p>
+                            <hr width = 100%>
+                            <h5 id="total"> 25.00</h5>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputtempo" class=" col-form-label text-dark">Qual valor pago pelo cliente?</label>
+                        <input type="value" name="troco" class="form-control" id="inputtroco" placeholder="Ex.30" required>
+                        <button class="btn btn-light text-dark simular">Calcular</button>
+                    </div>
+                    <div class="container results">
+                        <div class="calculo_troco">
+                            <span class="result_sem_plano text text-dark" id="valor"></span>
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="buttons">
+                <br>
+                <button  class="btn btn-dark text-light voltar2">Voltar</button>
+                <button class="btn btn-dark text-light finalizar">Fazer o pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!--PARTE DO COZINHEIRO-->
+    <div class="info_pedido">
+        <div class="info_pdd">
+            <span>CARDÁPIO</span>
+            <button class="btn btn-dark text-light sair2">Sair</button>
+        </div>
+        <div class="info_pedidos" id="pedidos">
+            <div class="card">
+                <div class="card-body cliente" id="pdd" name="pedido1">
+                <li class="card-title" > Nome:</li>
+                <p class="card-text">Pedido:</p>
+                <p class="card-text">Remover:</p>
+                <p class="card-text">Observações:</p>
+                </div>
+                <div class="card-body comida2" id="pdd" name="pedido2">
+                    <li class="card-title" > Nome:</li>
+                <p class="card-text">Pedido:</p>
+                <p class="card-text">Remover:</p>
+                <p class="card-text">Observações:</p>
+                </div>
+                <div class="card-body comida3" id="pdd" name="pedido3">
+                    <li class="card-title" > Nome:</li>
+                    <p class="card-text">Pedido:</p>
+                    <p class="card-text">Remover:</p>
+                    <p class="card-text">Observações:</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--RODAPÉ-->
+    <footer>
+        <div class="parte-inferior">
+            <br>
+            <h6 class="text text-dark text-center">Website desenvolvido por: Thaina Lima.</h6>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

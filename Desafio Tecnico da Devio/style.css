@@ -1,0 +1,326 @@
+/*MENU*/
+.bg-cinza{
+    margin: 0;
+    background-color: #696969;
+    list-style: none;
+}
+.bg-cinza-color{
+    background-color: #696969;
+}
+.parte-superior, .bg-rosa {
+    background: #ff87b7;
+    height: 1em;
+}
+.navbar-brand{
+    margin-left: 30px;
+}
+
+    /*ZOOM*/
+    .zoom{
+    overflow: hidden
+    }
+    .zoom img {
+    max-width:10%
+    -moz-transition (all 0.2s);
+    -webkit-transition-all: 0.2s;
+    transition: all 0.2s;
+    }
+  .zoom:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+  /*LOGIN*/
+  .user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #f767a0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+}
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+}
+.form_container {
+    margin-top: 100px;
+}
+.login_btn {
+    width: 100%;
+    background: #000000 !important;
+    color: white !important;
+}
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.login_container {
+    padding: 0 2rem;
+}
+.input-group-text {
+    background: #000000 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.text-light.text-center.bg-danger{
+    opacity: 0;
+    pointer-events: none;
+}
+.info_pedido {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    width: 900px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #ec5b95;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+/*PARTE DO PEDIDO*/
+.info_box {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    width: 900px;
+    background: white;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+.info_box .info_title, .info_pedido .info_pdd{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.info_box .info_list, .info_pedido .info_pedidos{
+    padding: 0px 30px;
+    margin-bottom: 15px;
+}
+.info_box .info_list .info, .info_pedido .info_pedidos .info{
+    margin:20px 0;
+    font-size: 17px;
+}
+.info_box .info_list .info span, .info_pedido .info_pedidos .info span{
+    font-weight: 600;
+    color: #3287dbea
+}
+.info{
+    margin-bottom: 10px !important;
+}
+#lista.card-body:hover, #pdd.card-body:hover{
+  background-color: rgb(153, 153, 153);
+}
+.info_box.activeInfo, .picadinho.activePicadinho, .pagamento.activePagamento, .text-light.text-center.bg-danger.activeIncorret, .info_pedido.activePedidos, .container.results.activeResults{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+.btn.btn-dark.text-light.sair2{
+    margin-left: 600px;
+    width: 150px;
+}
+
+/*PARTE DA PESQUISA*/
+input#pesquisa{
+    margin-left: 30px;
+    width: 840px;
+}
+
+/*Tela do pedido*/
+.picadinho{
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    width: 540px;
+    background: #ff87b7;
+    border-radius: 5px;
+    border: 2px solid #f35192;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+.picadinho .info_picadinho{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+.picadinho .info_list_picadinho{
+    padding: 0px 30px;
+    margin-bottom: 35px;
+}
+.picadinho .info_list_picadinho .info{
+    margin:20px 0;
+    font-size: 17px;
+  
+}
+.picadinho .info_list_picadinho .info span{
+    font-weight: 600;
+    color: #3287dbea
+}
+.info{
+    margin-bottom: 10px !important;
+}
+.btn.btn-dark.text-light.sair{
+    margin-left: 75%;
+    width: 110px;
+}
+
+.valor_cardapio{
+    margin-left: 610px;
+    font-weight: bold;
+}
+.valor_cardapio2{
+    margin-left: 540px;
+    font-weight: bold;
+}
+.valor_cardapio3{
+    margin-left: 565px;
+    font-weight: bold;
+}
+.valor_cardapio4{
+    margin-left: 525px;
+    font-weight: bold;
+}
+.valor_cardapio5{
+    margin-left: 588px;
+    font-weight: bold;
+}
+#resume{
+    font-size: 15px;
+}
+/*botao da Tela de adicionais*/
+.picadinho .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid white;
+}
+.picadinho .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 120px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor:pointer
+}
+
+/*PARTE DE PAGAMENTO*/
+.pagamento{
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    width: 540px;
+    background: #ff87b7;
+    border-radius: 5px;
+    border: 2px solid #f35192;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+.pagamento .info_pagamento{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+.pagamento .info_list_pagamento{
+    padding: 0px 30px;
+    margin-bottom: 35px;
+}
+.pagamento .info_list_pagamento .info{
+    margin:20px 0;
+    font-size: 17px;
+  
+}
+.pagamento .info_list_pagamento .info span{
+    font-weight: 600;
+    color: #3287dbea
+}
+.info{
+    margin-bottom: 10px !important;
+}
+#pedido{
+    font-size: 16px;
+}
+#prato, #suco{
+    font-size: 15px;
+}
+#valor_prato, #valor_acompanhamento{
+    font-size: 20px;
+}
+button.btn.btn-light.text-dark.simular{
+    border: 3px solid #ec5b95;
+    margin-left: 83%;
+}
+span.result_sem_plano.text.text-dark{
+    margin-left: 215px;
+}
+.container.results{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+
+/*RODAPÉ*/
+.parte-inferior {
+    background: #f767a0;
+    height: 55px;
+}
+.d-flex.justify-content-center.activeMenu{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
+
+
+
