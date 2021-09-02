@@ -11,5 +11,5 @@ Infelizmente, eu não ainda não tenho habilidades compactadas em Banco de Dados
 ### Como foi realizado o desenvolvimento do projeto?
 Site estruturado em HTML, e estilizado em CSS, na qual foi utilizado o Framework Bootstrap, já o JavaScript foi necessário para as animações, logo, na parte de design do site eu consegui desenvolver, pórem na parte de dados que precisariam ser armanezados e mandados para o cozinheiro eu tive muitas dificuldades e não obtive resultado favorável.
 
-###Obrigada pela oportunidade!
+## Obrigada pela oportunidade!
 Ass.Thaina Lima Matos
