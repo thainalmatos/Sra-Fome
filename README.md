@@ -1,11 +1,11 @@
 # Sra-Fome
 Website desenvolvido em HTML, CSS E JS.
 
-###Login:
+### Login:
 - usuário:maria e senha: 12345 --> Para o pessoal da recepção dos pedidos.
 - usuário:julia e senha: 12345 --> Para o pessoal da cozinha.
 
-###Dificuldades:
+### Dificuldades:
 Infelizmente, eu não ainda não tenho habilidades compactadas em Banco de Dados e não consegui fazer a junção para realizar o pedido e mandar para o cozinheiro.
 
 ### Como foi realizado o desenvolvimento do projeto?
